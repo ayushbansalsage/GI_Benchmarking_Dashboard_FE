@@ -1,0 +1,45 @@
+export const secondStepsFields = [
+  {
+    name: "staffSize",
+    type: "select",
+    label: "Staff size",
+    placeholder: "Select staff size",
+    required: true,
+    options: [
+      { label: "0/Vulenteer led", value: "0" },
+      { label: "1-4", value: "1-4" },
+      { label: "5-9", value: "5-9" },
+      { label: "10-19", value: "10-19" },
+      { label: "20-49", value: "20-49" },
+      { label: "50-249", value: "50-249" },
+      { label: "250-499", value: "250-499" },
+      { label: "500+", value: "500+" },
+    ],
+  },
+  {
+    name: "revenue",
+    type: "select",
+    label: "Revenue",
+    placeholder: "Select revenue",
+    required: true,
+    options: [
+      { label: "<$3M", value: "under-3M" },
+      { label: "$3-20M", value: "3m-20m" },
+      { label: ">$20M", value: "20M-above" },
+    ],
+  },
+  {
+    name: "zipcode",
+    type: "text",
+    label: "ZIP code",
+    placeholder: "Enter zipCode",
+    required: true,
+  },
+  {
+    name: "radius",
+    type: "text",
+    label: "Radius (in miles)",
+    placeholder: "Enter radius",
+    required: false,
+  },
+];
